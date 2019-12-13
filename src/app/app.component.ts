@@ -8,4 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent  {
   name = 'Angular';
   dateValue: any = '12/20/2019';
+  dateValue2: any = '12/20/2019';
 }

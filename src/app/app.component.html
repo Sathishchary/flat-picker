@@ -1,4 +1,11 @@
-<app-flatpicker [dataField]="dateValue" (onChange)="dateValue = $event.value;">
+<app-flatpicker [dataField]="dateValue" (onChange)="dateValue = $event">
 </app-flatpicker>
 
 <div>Selected Date: {{dateValue}}</div>
+
+
+
+<app-flatpicker [(dataField)]="dateValue2">
+</app-flatpicker>
+
+<div>Selected Date with two way binding: {{dateValue2}}</div>

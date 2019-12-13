@@ -22,6 +22,6 @@ export class FlatpikerComponent implements OnInit {
     });
   }
   change() {
-    this.onChange.emit({value: this.dataField});
+    this.onChange.emit(this.dataField);
   }
 }
