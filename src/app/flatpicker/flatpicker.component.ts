@@ -8,7 +8,7 @@ import flatpickr from 'flatpickr';
 })
 export class FlatpikerComponent implements OnInit {
   @Input() dataField: any;
-  @Output() onChange: EventEmitter<any> = new EventEmitter();
+  @Output() dataFieldChange: EventEmitter<any> = new EventEmitter();
   constructor() { }
 
   ngOnInit() {
@@ -22,6 +22,6 @@ export class FlatpikerComponent implements OnInit {
     });
   }
   change() {
-    this.onChange.emit(this.dataField);
+    this.dataFieldChange.emit(this.dataField);
   }
 }
