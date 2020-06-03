@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent  {
   name = 'Angular';
-  dateValue: any = '12/20/2019';
-  dateValue2: any = '12/20/2019';
+  dateValue: any = '06/4/2020 10:34 PM';
+  dateValue2: any = '06/4/2020 10:34 PM';
 }

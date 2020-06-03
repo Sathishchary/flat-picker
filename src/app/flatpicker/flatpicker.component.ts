@@ -13,12 +13,14 @@ export class FlatpikerComponent implements OnInit {
 
   ngOnInit() {
     flatpickr('.flatpickr', {
-      dateFormat: 'm/j/Y',
+      dateFormat: 'm/j/Y h:i K',
       time_24hr: false,
       minDate: new Date(),
       position: 'auto',
       defaultDate: new Date(),
-      static: true
+      static: true,
+      enableTime : true
+
     });
   }
   change() {
